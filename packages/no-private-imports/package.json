@@ -1,0 +1,41 @@
+{
+  "name": "no-private-imports",
+  "version": "0.0.1",
+  "description": "TypeScript plugin for export scoping",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liqvidjs/editor-plugins.git",
+    "directory": "packages/no-private-imports"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "pnpm build:clean && pnpm build:js && pnpm build:postclean",
+    "build:clean": "rm -rf dist",
+    "build:js": "tsc",
+    "build:postclean": "find ./dist -name tsconfig.tsbuildinfo -delete",
+    "lint": "biome check --fix",
+    "test": "jest"
+  },
+  "author": "Yuri Sulyma <yuri@liqvidjs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liqvidjs/liqvid/issues"
+  },
+  "homepage": "https://github.com/liqvidjs/liqvid/tree/main/packages/color-scheme#readme",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:dev",
+    "@types/jest": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "jest": "catalog:dev",
+    "ts-jest": "catalog:dev",
+    "typescript": "catalog:peer"
+  },
+  "peerDependencies": {
+    "typescript": "catalog:peer"
+  },
+  "sideEffects": false
+}

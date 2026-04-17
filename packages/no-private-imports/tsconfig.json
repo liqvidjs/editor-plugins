@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "composite": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rewriteRelativeImportExtensions": true,
+    "rootDir": "./src",
+    "target": "esnext"
+  },
+  "include": ["./src"]
+}

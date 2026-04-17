@@ -1,0 +1,39 @@
+{
+  "name": "no-restricted-imports",
+  "version": "0.0.1",
+  "description": "TypeScript plugin for disallowing specific imports",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liqvidjs/editor-plugins.git",
+    "directory": "packages/no-restricted-imports"
+  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "pnpm build:clean && pnpm build:js",
+    "build:clean": "rm tsconfig.tsbuildinfo; rm -rf dist",
+    "build:js": "tsc",
+    "lint": "biome check --fix",
+    "test": "NODE_OPTIONS='--disable-warning=ExperimentalWarning --experimental-strip-types --experimental-vm-modules' jest"
+  },
+  "author": "Yuri Sulyma <yuri@liqvidjs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liqvidjs/liqvid/issues"
+  },
+  "homepage": "https://github.com/liqvidjs/liqvid/tree/main/packages/color-scheme#readme",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:dev",
+    "@types/jest": "catalog:dev",
+    "@types/node": "catalog:dev",
+    "jest": "catalog:dev",
+    "ts-jest": "catalog:dev"
+  },
+  "peerDependencies": {
+    "typescript": "catalog:peer"
+  },
+  "sideEffects": false
+}
