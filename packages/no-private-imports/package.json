@@ -1,6 +1,6 @@
 {
   "name": "no-private-imports",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript plugin for export scoping",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/liqvidjs/liqvid/issues"
   },
-  "homepage": "https://github.com/liqvidjs/liqvid/tree/main/packages/color-scheme#readme",
+  "homepage": "https://github.com/liqvidjs/editor-plugins/tree/main/packages/no-private-imports",
   "devDependencies": {
     "@biomejs/biome": "catalog:dev",
     "@types/jest": "catalog:dev",
